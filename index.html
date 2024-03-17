@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" />
+    <meta name="author" content="Ben Tembe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Orthopod</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body>
+    <header>
+      <span
+        onclick="showNav()"
+        class="material-symbols-outlined mobile-nav-btn"
+      >
+        menu
+      </span>
+      <p class="logo">ortho-podcast SA</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="journals.html">Journals</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="mobile-nav" id="mobile-nav">
+      <span
+        onclick="hideNav()"
+        class="material-symbols-outlined mobile-nav-btn"
+      >
+        close
+      </span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="journals.html">Journals</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-img-container">
+          <img src="Images/bg-main.jpg" alt="#" class="hero-img" />
+        </div>
+        <div class="hero-content">
+          <div>
+            <h1>The Orthopod SA</h1>
+            <p>
+              Welcome to Orthopod SA, your go-to resource for all things
+              orthopedics. Whether you're a healthcare professional, a
+              researcher, or simply an enthusiast, we provide valuable insights,
+              resources, and expertise to help you stay informed and engaged in
+              the dynamic world of orthopedic medicine.
+            </p>
+            <a href="#services" class="explore-cta">Explore</a>
+          </div>
+        </div>
+      </section>
+      <article id="services" class="services">
+        <h2>What we offer</h2>
+        <section class="service-container">
+          <div class="service">
+            <img
+              class="service-img"
+              src="Images/podcast.jpg"
+              alt="A podcast setup"
+            />
+            <div>
+              <h2>Podcast</h2>
+              <p>
+                Dive into the dynamic world of orthopedics through our engaging
+                podcasts. Listen as industry experts discuss the latest
+                advancements, share case studies, and provide invaluable
+                insights into orthopedic care. From surgical innovations to
+                rehabilitation techniques, our podcasts offer a unique auditory
+                experience to expand your knowledge and stay informed.
+              </p>
+              <a href="podcast.html" class="service-link">Explore</a>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              class="service-img"
+              src="Images/journals.jpg"
+              alt="A book with a pen"
+            />
+            <div>
+              <h2>Journals</h2>
+              <p>
+                Explore a treasure trove of orthopedic knowledge with our
+                curated collection of journals. Delve into peer-reviewed
+                research, clinical studies, and scientific findings from
+                esteemed orthopedic publications worldwide. Whether you're a
+                researcher, a healthcare professional, or an enthusiast, our
+                journals section is your gateway to staying abreast of the
+                latest developments in orthopedic medicine.
+              </p>
+              <a href="journals.html" class="service-link">Explore</a>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              class="service-img"
+              src="Images/articles.jpg"
+              alt="A newspaper article "
+            />
+            <div>
+              <h2>Articles</h2>
+              <p>
+                Discover a wealth of informative articles covering a wide
+                spectrum of orthopedic topics. From common conditions like
+                arthritis and fractures to cutting-edge treatments and
+                preventive measures, our articles offer practical insights and
+                expert advice to enhance your understanding of orthopedic
+                health. Whether you're seeking tips for recovery or strategies
+                for maintaining bone and joint wellness, our articles are here
+                to inform and inspire.
+              </p>
+              <a href="journals.html#articles" class="service-link">Explore</a>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              class="service-img"
+              src="Images/research-paper.jpg"
+              alt="Person doing research"
+            />
+            <div>
+              <h2>Research Papers</h2>
+              <p>
+                Stay at the forefront of orthopedic innovation with our
+                comprehensive research section. Explore groundbreaking studies,
+                clinical trials, and evidence-based practices shaping the future
+                of orthopedic medicine. Whether you're a clinician seeking
+                evidence to inform your practice or a researcher pushing the
+                boundaries of orthopedic science, our research database provides
+                valuable resources to fuel your intellectual curiosity and drive
+                progress in the field.
+              </p>
+              <a href="journals.html#research-papers" class="service-link"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="contact-us">
+        <form action="submit">
+          <h3 class="form-title">Sign up to our Newsletter</h3>
+          <p>
+            Want to hear more from us? Sign up to our <br />free newsletter and
+            stay up to date on the <br />latest new in Orthopaedics
+          </p>
+          <input
+            type="text"
+            id="news-letter-email"
+            placeholder="example@gmail.com"
+          />
+          <button id="submit-btn">Sign Up</button>
+        </form>
+        <div class="about-us">
+          <h3>About Us</h3>
+          <a href="#">Overview of the Orthopod-SA</a
+          ><a href="about-us.html#the-team">Our Team</a
+          ><a href="#">Our Vision and Mission</a>
+        </div>
+        <div class="map-direction">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57060.60629367542!2d30.625819890366923!3d-26.639263241409964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeecc354df02dcb%3A0x35e761143074e7cb!2sAmsterdam%2C%202375!5e0!3m2!1sen!2sza!4v1709377029239!5m2!1sen!2sza"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <p class="footer">orthopod-sa &copy; 2024</p>
+    </footer>
+    <script>
+      const close_nav = document.getElementById("mobile-nav");
+
+      function hideNav() {
+        close_nav.style.display = "none";
+      }
+      function showNav() {
+        close_nav.style.display = "flex";
+      }
+    </script>
+  </body>
+</html>

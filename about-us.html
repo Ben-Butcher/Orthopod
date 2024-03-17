@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ben Tembe" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Orthopod</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span
+        onclick="showNav()"
+        class="material-symbols-outlined mobile-nav-btn"
+      >
+        menu
+      </span>
+      <p class="logo">ortho-podcast SA</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="journals.html">Journals</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="mobile-nav">
+      <span
+        onclick="hideNav()"
+        class="material-symbols-outlined mobile-nav-btn"
+      >
+        close
+      </span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="journals.html">Journals</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="about-us-main">
+      <article class="about-orthopod">
+        <h1>The Orthopod SA</h1>
+        <p>
+          Welcome to Orthopod SA, your ultimate destination for comprehensive
+          orthopedic insights. Our platform is curated by leading experts in the
+          field, aiming to empower readers with reliable information and
+          resources to understand and navigate orthopedic health with
+          confidence. Whether you're a healthcare professional, a patient, or
+          simply curious about orthopedics, we're here to guide you through the
+          intricacies of bone and joint health
+        </p>
+      </article>
+      <article id="the-team" class="the-team">
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <img src="Images/member.jpg" alt="demo member" />
+            <div class="member-info">
+              <h3>Jane Doe</h3>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="Images/m2.jpg" alt="demo member" />
+            <div class="member-info">
+              <h3>Jane Doe</h3>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="Images/m3.jpg" alt="demo member" />
+            <div class="member-info">
+              <h3>Jane Doe</h3>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonials" id="testimonials">
+        <h2>What people say</h2>
+        <section class="testimonial-container">
+          <div class="testimonial">
+            <img src="Images/f1.jpg" alt="demo testimonial person" />
+            <div class="testimonial-info">
+              <h3>James Jones</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, ipsam? Velit, eum excepturi provident fuga
+                repudiandae eos ullam quia non, quasi autem, accusantium sint
+                sequi sit ex et aspernatur dolorem?
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="Images/m1.jpg" alt="demo testimonial person" />
+            <div class="testimonial-info">
+              <h3>James Jones</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, ipsam? Velit, eum excepturi provident fuga
+                repudiandae eos ullam quia non, quasi autem, accusantium sint
+                sequi sit ex et aspernatur dolorem?
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="Images/f2.jpg" alt="demo testimonial person" />
+            <div class="testimonial-info">
+              <h3>James Jones</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, ipsam? Velit, eum excepturi provident fuga
+                repudiandae eos ullam quia non, quasi autem, accusantium sint
+                sequi sit ex et aspernatur dolorem?
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="Images/f3.jpg" alt="demo testimonial person" />
+            <div class="testimonial-info">
+              <h3>James Jones</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, ipsam? Velit, eum excepturi provident fuga
+                repudiandae eos ullam quia non, quasi autem, accusantium sint
+                sequi sit ex et aspernatur dolorem?
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="contact-us">
+        <form action="submit">
+          <h3 class="form-title">Sign up to our Newsletter</h3>
+          <p>
+            Want to hear more from us? Sign up to our <br />free newsletter and
+            stay up to date on the <br />latest new in Orthopaedics
+          </p>
+          <input
+            type="text"
+            id="news-letter-email"
+            placeholder="example@gmail.com"
+          />
+          <button id="submit-btn">Sign Up</button>
+        </form>
+        <div class="about-us">
+          <h3>About Us</h3>
+          <a href="#">Overview of the Orthopod-SA</a
+          ><a href="#the-team">Our Team</a
+          ><a href="#">Our Vision and Mission</a>
+        </div>
+        <div class="map-direction">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57060.60629367542!2d30.625819890366923!3d-26.639263241409964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeecc354df02dcb%3A0x35e761143074e7cb!2sAmsterdam%2C%202375!5e0!3m2!1sen!2sza!4v1709377029239!5m2!1sen!2sza"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <p class="footer">orthopod-sa &copy; 2024</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const headerHeight = 129; // Height of the fixed header
+        const links = document.querySelectorAll('a[href^="#"]');
+
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            const targetOffset =
+              targetElement.getBoundingClientRect().top + window.scrollY;
+            const adjustedOffset = targetOffset - headerHeight;
+
+            window.scrollTo({
+              top: adjustedOffset,
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

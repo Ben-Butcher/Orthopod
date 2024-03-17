@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .mobile-nav-btn {
+    display: inline-block;
+  }
+  nav {
+    display: none;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .hero-image {
+    display: 100%;
+    padding: 8px;
+  }
+  .hero-content h1 {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .hero-content P {
+    padding: 0.4em 0.7em;
+  }
+  .explore-cta {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  .service-container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .contact-us {
+    display: block;
+  }
+}
