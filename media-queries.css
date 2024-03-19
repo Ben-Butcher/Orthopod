@@ -42,4 +42,16 @@
   .contact-us {
     display: block;
   }
+  /* || about us media queries */
+  .about-us-main {
+    width: 100%;
+  }
+  .about-orthopod h1 {
+    margin: 25px auto;
+  }
+  .team-container,
+  .testimonial-container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }

@@ -25,14 +25,7 @@
     --accent-color: #2c14b3;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--Font-color);
@@ -67,47 +60,6 @@ body {
   margin: 0.6em;
   cursor: pointer;
   display: none;
-}
-
-header {
-  padding-bottom: 8px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient(
-    to right,
-    var(--bg-color),
-    var(--accent-color)
-  );
-}
-.logo {
-  text-align: center;
-  font-size: var(--fs-large);
-  text-transform: uppercase;
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  margin: 15px auto;
-}
-a {
-  text-decoration: none;
-  font-size: var(--fs-l-small);
-  color: #fff;
-  padding: 0.2em 0.45em;
-  border: none;
-
-  border-radius: 8px;
-  outline: none;
-  transition: all 200ms ease-in-out;
-}
-a:hover,
-a:focus {
-  color: var(--Font-color);
-  outline: 1px solid whitesmoke;
 }
 
 main {
@@ -194,69 +146,15 @@ main {
   margin: 10px 0;
   border: 1px solid black;
   text-align: center;
+  color: #333;
   border-radius: 0;
 }
-/* || Footer Styling */
-footer {
-  background-color: #1f1a1a;
-  min-height: 100px;
-}
-.contact-us {
-  display: flex;
-  justify-content: space-evenly;
+.service-link:hover,
+.service-link:focus {
+  background-color: black;
   color: white;
-  padding: 15px 0;
-}
-form {
-  font-size: va(--fs-small);
-}
-.form-title {
-  font-size: 2rem;
-  margin: 15px 0 25px;
-}
-form p {
-  font-size: var(--fs-x-small);
-  margin-bottom: 20px;
-}
-.map {
-  border-radius: 12px;
-}
-form input {
-  width: 300px;
-  height: 40px;
-  outline: none;
-}
-form input::placeholder {
-  font-size: var(--fs-x-small);
-  color: #333;
-}
-form button {
-  height: 38px;
-  width: 75px;
-  border: none;
-  color: #fff;
-  background-color: hsl(240, 100%, 65%);
-  font-size: inherit;
 }
 
-.about-us {
-  display: flex;
-  flex-direction: column;
-}
-.about-us h3 {
-  font-size: 2rem;
-  margin: 15px 0 25px;
-}
-.about-us a {
-  margin-bottom: 15px;
-  font-size: var(--fs-x-small);
-  color: #fff;
-  text-decoration: none;
-}
-.footer {
-  text-align: center;
-  color: white;
-}
 /*  || About US styling */
 .about-us-main {
   margin-bottom: 150px;
@@ -309,9 +207,8 @@ form button {
 }
 .team-member img {
   width: 300px;
-  height: 300px;
+  aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 150px;
   padding: 0 25px;
 }
 .member-info {
@@ -367,4 +264,61 @@ form button {
   border-radius: 12px;
   padding: 8px;
   color: #333;
+}
+/* || podcast styling */
+.pod-cast {
+  height: 250px;
+  width: 250px;
+  border: 1px solid var(--Font-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pod-cast img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.pod-cast-media-desc {
+  padding: 8px;
+}
+.pod-cast-media-desc p {
+  font-size: 0.65rem;
+}
+.pod-cast-media-ctrl {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.pod-cast-media-ctrl button {
+  padding: 5px;
+  height: 35px;
+  width: 85px;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+#listen-btn {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--secondary-color);
+}
+#listen-btn:hover,
+#listen-btn:focus {
+  background-color: var(--secondary-color);
+  color: white;
+}
+#watch-btn {
+  margin-left: 10px;
+  color: white;
+  background-color: var(--secondary-color);
+}
+#watch-btn:hover,
+#watch-btn:focus {
+  background-color: transparent;
+  color: var(--accent-color);
+  outline: 1px solid var(--secondary-color);
 }
