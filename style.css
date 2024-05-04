@@ -117,10 +117,15 @@ main {
   text-align: center;
 }
 .service-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3em;
-  padding: 4em;
+  width: 80%;
+  min-height: 100vh;
+  margin: 5em auto;
+}
+.service {
+  position: relative;
+  height: 60vh;
+  margin-block: 4em;
+  overflow: hidden;
 }
 .service-img {
   width: 100%;
@@ -128,30 +133,35 @@ main {
   aspect-ratio: 16/9;
 }
 .service div {
+  position: absolute;
+  top: 0px;
   display: flex;
   flex-flow: column nowrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  text-align: center;
 }
 .service div > h2 {
   margin: 15px 0;
 }
 .service div > p {
-  font-size: var(--fs-xx-small);
-  color: gray;
+  font-size: var(--fs-x-small);
+  color: #fff;
   line-height: 1.5;
-  height: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 70%;
+  margin-inline: auto;
 }
 .service-link {
-  margin: 10px 0;
-  border: 1px solid black;
   text-align: center;
-  color: #333;
-  border-radius: 0;
+  color: hsl(216, 100%, 30%);
+  margin: 15px auto;
+  position: relative;
+  width: max-content;
+  text-decoration: underline;
 }
+
 .service-link:hover,
 .service-link:focus {
-  background-color: black;
+  text-decoration: underline;
   color: white;
 }
 
@@ -266,59 +276,18 @@ main {
   color: #333;
 }
 /* || podcast styling */
-.pod-cast {
-  height: 250px;
-  width: 250px;
-  border: 1px solid var(--Font-color);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.pod-cast img {
-  height: 50%;
-  width: 100%;
-  object-fit: cover;
-}
-.pod-cast-media-desc {
-  padding: 8px;
-}
-.pod-cast-media-desc p {
-  font-size: 0.65rem;
-}
-.pod-cast-media-ctrl {
-  margin-top: 10px;
-  padding: 0 10px;
-}
-.pod-cast-media-ctrl button {
-  padding: 5px;
-  height: 35px;
-  width: 85px;
-  font-size: 1.125rem;
-  border-radius: 8px;
-  border: none;
-  color: black;
-  background-color: white;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-#listen-btn {
-  background-color: transparent;
-  color: var(--accent-color);
-  border: 1px solid var(--secondary-color);
-}
-#listen-btn:hover,
-#listen-btn:focus {
-  background-color: var(--secondary-color);
-  color: white;
-}
 #watch-btn {
-  margin-left: 10px;
-  color: white;
-  background-color: var(--secondary-color);
+  width: max-content;
+  padding: 10px 15px;
 }
-#watch-btn:hover,
-#watch-btn:focus {
-  background-color: transparent;
-  color: var(--accent-color);
-  outline: 1px solid var(--secondary-color);
+.podcast video {
+  height: 300px;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+}
+.podcast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 10px;
 }

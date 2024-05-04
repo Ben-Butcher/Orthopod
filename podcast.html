@@ -47,19 +47,14 @@
       </nav>
     </header>
     <main>
-      <div class="pod-cast">
-        <img src="Images/journals.jpg" alt="" />
-        <div class="pod-cast-media-desc">
-          <div>
-            <h3>Ep 1. The header</h3>
-            <p>Short description</p>
-          </div>
-          <div class="pod-cast-media-ctrl">
-            <button id="listen-btn">Listen</button>
-            <button id="watch-btn">Watch</button>
-          </div>
-        </div>
+      <div class="podcast">
+        <video controls>
+          <source src="media-videos/vid-1.mp4" type="video/mp4" />
+        </video>
       </div>
+      <button type="button" id="watch-btn" onclick="loadVideo()">
+        Generate Random Video
+      </button>
     </main>
     <footer>
       <section class="contact-us">
@@ -97,5 +92,6 @@
       </section>
       <p class="footer">orthopod-sa &copy; 2024</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

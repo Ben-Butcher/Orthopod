@@ -10,6 +10,8 @@ html {
 header {
   padding-bottom: 8px;
   position: fixed;
+  z-index: 100;
+  /* height: min-content; */
   top: 0;
   left: 0;
   right: 0;
@@ -43,11 +45,11 @@ a {
   outline: none;
   transition: all 200ms ease-in-out;
 }
-a:hover,
+/* a:hover,
 a:focus {
   color: var(--Font-color);
   outline: 1px solid #333;
-}
+} */
 /* || Footer Styling */
 footer {
   background-color: #1f1a1a;
